@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Supplementary Material - Cyanocyclopentadiene Study</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts: Raleway (Headings) and Lato (Body) to match poster vibes -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Raleway:wght@400;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- Header -->
+        <header class="fade-in">
+            <div class="logo-strip">
+                <img src="images/logo_univ-1.png" alt="Univ Lille" class="partner-logo">
+                <img src="images/logo_phlam-1.png" alt="CNRS" class="partner-logo logo-lg">
+                <!-- Add other logos if available -->
+                <!-- Language Switcher -->
+                <div class="lang-switcher">
+                    <button onclick="changeLanguage('en')" class="lang-btn active">EN</button> |
+                    <button onclick="changeLanguage('fr')" class="lang-btn">FR</button> |
+                    <button onclick="changeLanguage('es')" class="lang-btn">ES</button>
+                </div>
+            </div>
+            <h1 class="header-title" data-i18n="title">Extending the Rotational Library of<br>1- and
+                2-Cyanocyclopentadiene</h1>
+            <p class="subtitle" data-i18n="subtitle">Millimeter-wave Transitions for Astronomical Searches in Hot Cores
+            </p>
+
+            <div class="authors-list">
+                <span class="author-item">Noé Gallifa-Guynot <a href="mailto:noe.gallifa@univ-lille.fr"><i
+                            class="fas fa-envelope"></i></a></span> &bull;
+                <span class="author-item">Laurent Margulès <a href="mailto:laurent.margules@univ-lille.fr"><i
+                            class="fas fa-envelope"></i></a></span> &bull;
+                <span class="author-item">Brett A. McGuire</span> &bull;
+                <span class="author-item">Jerôme Loreau</span>
+            </div>
+        </header>
+
+        <!-- Abstract / Key Findings -->
+        <section id="abstract" class="fade-in">
+            <h2 data-i18n="abstract_title">Abstract & Key Findings</h2>
+            <div class="abstract-box">
+                <p>
+                    <strong data-i18n="context_label">Context:</strong> <span data-i18n="context_text">1- and
+                        2-cyanocyclopentadiene are potential precursors to PAHs and have been detected in TMC-1.
+                        However, cm-wave data was insufficient for mm-wave searches in warmer sources.</span>
+                </p>
+                <p>
+                    <strong data-i18n="work_label">This Work:</strong> <span data-i18n="work_text">We extended the
+                        analysis to <strong>75–500 GHz</strong>.</span>
+                </p>
+                <ul>
+                    <li data-i18n="findings_1">Assigned <strong>7200+</strong> transitions (1-cyano-CPD) and
+                        <strong>4000+</strong> (2-cyano-CPD).
+                    </li>
+                    <li data-i18n="findings_2">Reached quantum numbers <strong>J=153</strong>.</li>
+                    <li data-i18n="findings_3">Determined <strong>sextic and octic</strong> distortion constants.</li>
+                    <li data-i18n="findings_4">Calculated partition functions up to <strong>300 K</strong>.</li>
+                </ul>
+                <li>Assigned <strong>7200+</strong> transitions (1-cyano-CPD) and <strong>4000+</strong>
+                    (2-cyano-CPD).</li>
+                <li>Reached quantum numbers <strong>J=153</strong>.</li>
+                <li>Determined <strong>sextic and octic</strong> distortion constants.</li>
+                <li>Calculated partition functions up to <strong>300 K</strong>.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Stats -->
+        <section class="stats-grid fade-in">
+            <div class="stat-card">
+                <span class="stat-number" data-target="7219">0</span>
+                <span class="stat-label" data-i18n="stat_lines_1">Lines Assigned (1-cyano-CPD)</span>
+            </div>
+            <div class="stat-card">
+                <span class="stat-number" data-target="4075">0</span>
+                <span class="stat-label" data-i18n="stat_lines_2">Lines Assigned (2-cyano-CPD)</span>
+            </div>
+            <div class="stat-card">
+                <span class="stat-number" data-target="153">0</span>
+                <span class="stat-label" data-i18n="stat_max_j">Max J Reached</span>
+            </div>
+        </section>
+
+        <!-- Detailed Methodology -->
+        <section id="setup" class="fade-in">
+            <h2 data-i18n="setup_title">Experimental Setup</h2>
+            <p data-i18n="setup_lab_text">
+                The study was conducted at the <strong>PhLAM laboratory</strong> (University of Lille) using the
+                Fast-scan Terahertz Spectrometer (FAST).
+            </p>
+
+            <div class="figure-container">
+                <img src="images/Schema_FAST.png" alt="Fast-scan Terahertz Spectrometer Diagram" class="figure-img">
+                <p class="figure-caption" data-i18n="setup_figure_caption"><strong>Figure 1:</strong> Diagram of the
+                    Lille Fast-scan absorption
+                    spectrometer (FLASH).</p>
+            </div>
+
+            <p>
+                <strong data-i18n="setup_conditions_title">Pyrolysis Conditions:</strong>
+            <ul>
+                <li data-i18n="setup_cond_precursor"><strong>Precursor:</strong> 1H-benzotriazole</li>
+                <li data-i18n="setup_cond_temp"><strong>Temperature:</strong> 800°C</li>
+                <li data-i18n="setup_cond_press"><strong>Pressure:</strong> 1.8 × 10<sup>-2</sup> mbar</li>
+                <li data-i18n="setup_cond_path"><strong>Path Length:</strong> 2 m quartz cell</li>
+            </ul>
+            </p>
+            <p>
+                <strong data-i18n="setup_specs_title">Spectrometer Features:</strong>
+            <ul>
+                <li data-i18n="setup_spec_range"><strong>Range Covered:</strong> 75–500 GHz (using VDI multipliers).
+                </li>
+                <li data-i18n="setup_spec_accuracy"><strong>Accuracy:</strong> 30–50 kHz (Doppler limited).</li>
+                <li data-i18n="setup_spec_tech"><strong>Technology:</strong> Direct Digital Synthesizer (DDS) for fast
+                    scanning and precise
+                    frequency modulation.</li>
+            </ul>
+            </p>
+        </section>
+
+        <!-- Data Tables -->
+        <section id="results" class="fade-in">
+            <h2 data-i18n="results_title">Spectroscopic Results</h2>
+            <p data-i18n="results_intro">
+                The following tables summarize the improved rotational constants and partition functions derived from
+                this study.
+            </p>
+
+            <h3>Table 1: Rotational Constants Comparison (MHz)</h3>
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <!-- Main Headers -->
+                        <tr>
+                            <th rowspan="2">Parameter</th>
+                            <th colspan="3">1-cyano-CPD</th>
+                            <th colspan="3">2-cyano-CPD</th>
+                        </tr>
+                        <!-- Sub Headers -->
+                        <tr>
+                            <th>This Work</th>
+                            <th>K. Lee (2021)</th>
+                            <th>McCarthy (2020)</th>
+                            <th>This Work</th>
+                            <th>K. Lee (2021)</th>
+                            <th>McCarthy (2020)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Rotational Constants -->
+                        <tr>
+                            <td>A</td>
+                            <td>8352.9846(20)</td>
+                            <td>8352.981(10)</td>
+                            <td>8352.98(2)</td>
+                            <td>8235.5554(30)</td>
+                            <td>8235.592(14)</td>
+                            <td>8235.66(4)</td>
+                        </tr>
+                        <tr>
+                            <td>B</td>
+                            <td>1904.251057(42)</td>
+                            <td>1904.2522(2)</td>
+                            <td>1904.2514(3)</td>
+                            <td>1902.074720(60)</td>
+                            <td>1902.0748(3)</td>
+                            <td>1902.0718(2)</td>
+                        </tr>
+                        <tr>
+                            <td>C</td>
+                            <td>1565.366373(43)</td>
+                            <td>1565.3652(2)</td>
+                            <td>1565.3659(3)</td>
+                            <td>1559.647117(49)</td>
+                            <td>1559.6472(2)</td>
+                            <td>1559.6502(2)</td>
+                        </tr>
+
+                        <!-- Quartic Constants -->
+                        <tr class="section-row">
+                            <td colspan="7">Quartic Centrifugal Distortion (×10³)</td>
+                        </tr>
+                        <tr>
+                            <td>Δ<sub>J</sub></td>
+                            <td>0.0736635(39)</td>
+                            <td>0.0743(11)</td>
+                            <td>0.0701(15)</td>
+                            <td>0.0719712(19)</td>
+                            <td>0.0686(11)</td>
+                            <td>0.0561(37)</td>
+                        </tr>
+                        <tr>
+                            <td>Δ<sub>JK</sub></td>
+                            <td>2.354548(52)</td>
+                            <td>2.354(8)</td>
+                            <td>2.361(15)</td>
+                            <td>2.338222(65)</td>
+                            <td>2.287(21)</td>
+                            <td>2.286(46)</td>
+                        </tr>
+                        <tr>
+                            <td>Δ<sub>K</sub></td>
+                            <td>[0.17561]<sup>a</sup></td>
+                            <td>[0.17561]<sup>a</sup></td>
+                            <td>[0.000]<sup>a</sup></td>
+                            <td>0.245(15)</td>
+                            <td>[0.32391]<sup>a</sup></td>
+                            <td>[0.000]<sup>a</sup></td>
+                        </tr>
+                        <tr>
+                            <td>δ<sub>J</sub></td>
+                            <td>0.01380214(71)</td>
+                            <td>0.0133(5)</td>
+                            <td>0.0120(11)</td>
+                            <td>0.0136923(13)</td>
+                            <td>0.0134(6)</td>
+                            <td>[0.000]<sup>a</sup></td>
+                        </tr>
+                        <tr>
+                            <td>δ<sub>K</sub></td>
+                            <td>1.33910(26)</td>
+                            <td>1.48(9)</td>
+                            <td>1.21(13)</td>
+                            <td>1.32638(28)</td>
+                            <td>1.10(9)</td>
+                            <td>[0.000]<sup>a</sup></td>
+                        </tr>
+
+                        <!-- Sextic Constants -->
+                        <tr class="section-row">
+                            <td colspan="7">Sextic Centrifugal Distortion (×10⁶)</td>
+                        </tr>
+                        <tr>
+                            <td>H<sub>J</sub></td>
+                            <td>0.00260(12)</td>
+                            <td>...</td>
+                            <td>...</td>
+                            <td>[0.0000]</td>
+                            <td>...</td>
+                            <td>...</td>
+                        </tr>
+                        <tr>
+                            <td>H<sub>JK</sub></td>
+                            <td>0.0049982(81)</td>
+                            <td>...</td>
+                            <td>...</td>
+                            <td>0.005011(17)</td>
+                            <td>...</td>
+                            <td>...</td>
+                        </tr>
+                        <tr>
+                            <td>H<sub>KJ</sub></td>
+                            <td>-0.031029(31)</td>
+                            <td>...</td>
+                            <td>...</td>
+                            <td>-0.028537(78)</td>
+                            <td>...</td>
+                            <td>...</td>
+                        </tr>
+                        <tr>
+                            <td>H<sub>K</sub></td>
+                            <td>[0.0000]</td>
+                            <td>...</td>
+                            <td>...</td>
+                            <td>0.113(18)</td>
+                            <td>...</td>
+                            <td>...</td>
+                        </tr>
+                        <tr>
+                            <td>h<sub>JK</sub></td>
+                            <td>0.0022257(90)</td>
+                            <td>...</td>
+                            <td>...</td>
+                            <td>0.0023020(51)</td>
+                            <td>...</td>
+                            <td>...</td>
+                        </tr>
+                        <tr>
+                            <td>h<sub>K</sub></td>
+                            <td>0.03162(20)</td>
+                            <td>...</td>
+                            <td>...</td>
+                            <td>0.03805(43)</td>
+                            <td>...</td>
+                            <td>...</td>
+                        </tr>
+
+                        <!-- Octic Constants -->
+                        <tr class="section-row">
+                            <td colspan="7">Octic Centrifugal Distortion (×10⁹)</td>
+                        </tr>
+                        <tr>
+                            <td>L<sub>JJK</sub></td>
+                            <td>-0.000008380(96)</td>
+                            <td>...</td>
+                            <td>...</td>
+                            <td>[0.0000]</td>
+                            <td>...</td>
+                            <td>...</td>
+                        </tr>
+                        <tr>
+                            <td>l<sub>K</sub></td>
+                            <td>-0.001025(20)</td>
+                            <td>...</td>
+                            <td>...</td>
+                            <td>[0.0000]</td>
+                            <td>...</td>
+                            <td>...</td>
+                        </tr>
+
+                        <!-- Fitting Stats -->
+                        <tr class="section-row">
+                            <td colspan="7">Fit Statistics</td>
+                        </tr>
+                        <tr>
+                            <td>N<sub>lines</sub></td>
+                            <td>7219</td>
+                            <td>154</td>
+                            <td>68</td>
+                            <td>4075</td>
+                            <td>110</td>
+                            <td>38</td>
+                        </tr>
+                        <tr>
+                            <td>(J, K<sub>a</sub>)<sub>max</sub></td>
+                            <td>(153, 50)</td>
+                            <td>(11, 3)</td>
+                            <td>(9, 3)</td>
+                            <td>(153, 37)</td>
+                            <td>(10, 2)</td>
+                            <td>(5, 2)</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p class="table-caption">
+                    <sup>a</sup> Fixed during least-squares fitting.<br>
+                    Values in parentheses are 1σ uncertainties in the last quoted digits.<br>
+                    Constants correspond to the Watson A-reduction Hamiltonian in the I<sup>r</sup> representation.
+                </p>
+            </div>
+
+            <h3>Table 2: Partition Functions</h3>
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Temperature (K)</th>
+                            <th colspan="3">1-cyano-CPD</th>
+                            <th colspan="3">2-cyano-CPD</th>
+                        </tr>
+                        <tr style="background:#eef; color:#333;">
+                            <th></th>
+                            <th>Q<sub>rot</sub></th>
+                            <th>Q<sub>vib</sub></th>
+                            <th>Q<sub>tot</sub></th>
+                            <th>Q<sub>rot</sub></th>
+                            <th>Q<sub>vib</sub></th>
+                            <th>Q<sub>tot</sub></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>300</td>
+                            <td>175,562</td>
+                            <td>5.95</td>
+                            <td><strong>1,044,141</strong></td>
+                            <td>177,229</td>
+                            <td>6.30</td>
+                            <td><strong>1,117,270</strong></td>
+                        </tr>
+                        <tr>
+                            <td>225</td>
+                            <td>114,108</td>
+                            <td>3.03</td>
+                            <td>345,179</td>
+                            <td>115,194</td>
+                            <td>3.10</td>
+                            <td>357,514</td>
+                        </tr>
+                        <tr>
+                            <td>150</td>
+                            <td>62,107</td>
+                            <td>1.67</td>
+                            <td>103,629</td>
+                            <td>62,699</td>
+                            <td>1.67</td>
+                            <td>105,001</td>
+                        </tr>
+                        <tr>
+                            <td>75</td>
+                            <td>21,957</td>
+                            <td>1.09</td>
+                            <td>23,906</td>
+                            <td>22,166</td>
+                            <td>1.09</td>
+                            <td>24,110</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p class="table-caption">Ro-vibrational partition functions. Note the significant vibrational
+                    contribution at 300 K.</p>
+            </div>
+        </section>
+
+        <!-- Detailed Analysis -->
+        <section id="discussion" class="fade-in">
+            <h2 data-i18n="analysis_title">Analysis & Discussion</h2>
+
+            <h3 data-i18n="analysis_subtitle_1">High-Precision Fitting</h3>
+            <p data-i18n="analysis_text_1">
+                We successfully assigned transitions up to <strong>J=153</strong> and <strong>K<sub>a</sub>=50</strong>
+                for 1-cyano-CPD (7219 lines)
+                and <strong>K<sub>a</sub>=37</strong> for 2-cyano-CPD (4075 lines). The fit achieved microwave RMS
+                values of
+                <strong>47.5 kHz</strong> and <strong>44.8 kHz</strong> respectively, which are below the estimated peak
+                measurement uncertainties.
+            </p>
+            <p data-i18n="analysis_text_2">
+                The 3:1 abundance ratio observed in favor of 1-cyano-CPD is consistent with previous studies,
+                explaining the lower number of assigned transitions for the second isomer.
+            </p>
+
+            <h3 data-i18n="analysis_subtitle_2">Importance of High-Frequency Data</h3>
+            <p data-i18n="analysis_text_3">
+                Earlier predictions based on centimeter-wave data diverged significantly (>200 GHz) due to the lack of
+                higher-order centrifugal distortion terms. By extending the range to 500 GHz, we determined
+                <strong>sextic and octic parameters</strong> that are essential for accurate sub-millimeter predictions.
+            </p>
+
+            <h3 data-i18n="analysis_subtitle_3">Vibrational Contribution</h3>
+            <p data-i18n="analysis_text_4">
+                At <strong>300 K</strong>, the vibrational partition function (Q<sub>vib</sub>) reaches ~5.95,
+                contributing
+                a factor of nearly <strong>6</strong> to the total partition function. Neglecting this in warm
+                environments
+                (like Hot Cores) would lead to a significant underestimation of molecular column densities.
+            </p>
+        </section>
+
+        <!-- Data Repository -->
+        <section id="data" class="fade-in">
+            <h2 data-i18n="data_title">Data Availability</h2>
+            <div class="lsd-logo-container">
+                <img src="images/LSD_logo.png" alt="Lille Spectroscopic Database" class="lsd-logo">
+            </div>
+            <p data-i18n="data_text">
+                The complete line lists, including assigned frequencies and intensities for both 1- and
+                2-cyanocyclopentadiene,
+                are available in the Lille Spectroscopic Database (LSD).
+            </p>
+            <p style="text-align: center; margin-top: 1.5rem;">
+                <a href="#" class="btn-primary"
+                    style="display: inline-block; padding: 10px 20px; background: var(--primary-color); color: white; border-radius: 4px; text-decoration: none;">
+                    <i class="fas fa-database"></i> <span data-i18n="data_button">Access Data Repository</span>
+                </a>
+            </p>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <p data-i18n="footer_copyright">&copy; 2026 Université de Lille - PhLAM Laboratory</p>
+            <div class="footer-links">
+                <a href="https://phlam.univ-lille.fr" data-i18n="footer_lab_web">Lab Website</a>
+                <a href="poster_2026.pdf" target="_blank" download data-i18n="footer_download">Download Poster</a>
+                <a href="#" onclick="window.print()" data-i18n="footer_print">Print Information</a>
+            </div>
+        </footer>
+
+    </div>
+
+    <!-- Mobile Bottom Navigation -->
+    <nav class="mobile-nav">
+        <a href="#" class="nav-item">
+            <i class="fas fa-home"></i>
+            <span>Home</span>
+        </a>
+        <a href="#setup" class="nav-item">
+            <i class="fas fa-microscope"></i>
+            <span>Setup</span>
+        </a>
+        <a href="#results" class="nav-item">
+            <i class="fas fa-table"></i>
+            <span>Data</span>
+        </a>
+        <a href="#discussion" class="nav-item">
+            <i class="fas fa-chart-line"></i>
+            <span>Analysis</span>
+        </a>
+    </nav>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
