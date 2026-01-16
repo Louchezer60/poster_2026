@@ -409,3 +409,19 @@ footer {
         padding: 0;
     }
 }
+
+/* Data Access Logo */
+.lsd-logo-container {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.lsd-logo {
+    height: 100px;
+    width: auto;
+    transition: transform 0.3s ease;
+}
+
+.lsd-logo:hover {
+    transform: scale(1.05);
+}
